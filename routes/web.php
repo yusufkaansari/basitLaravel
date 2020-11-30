@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\App;
+use App\Http\Controllers\Anasayfa;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,3 +19,4 @@ Route::get('/', function () {
     return view('welcome');
 
 });
+Route::get('/anasayfa', [Anasayfa::class, 'index']);

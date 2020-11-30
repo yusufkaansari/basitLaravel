@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class App extends Controller
+class Anasayfa extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -13,7 +13,7 @@ class App extends Controller
      */
     public function index()
     {
-        echo "anasayfa burası";
+        return "burası conroller anasayfa";
     }
 
     /**
